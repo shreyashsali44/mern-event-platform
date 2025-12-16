@@ -11,7 +11,7 @@ app.use(express.json());
 // MongoDB connection (NO .env)
 mongoose
   .connect(
-    "mongodb+srv://shreeyashsali17_db_user:egPJrYPhe9cfMqlr@cluster11.jj2tjru.mongodb.net/eventdb?appName=Cluster11"
+    "mongodb+srv://<USERNAME>:<PASSWORD>@<CLUSTER_URL>/<DATABASE_NAME>"
   )
   .then(() => {
     console.log("MongoDB Connected");
